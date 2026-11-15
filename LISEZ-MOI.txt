@@ -1,0 +1,21 @@
+ON SE CALE - appli installable (PWA) pour trouver un créneau entre amis
+
+CONTENU
+  index.html, style.css, app.js      l'appli
+  manifest.webmanifest, sw.js        ce qui la rend installable et utilisable hors ligne
+  icons/                             icônes
+
+POUR L'UTILISER SUR ANDROID
+Une PWA doit être servie en HTTPS. Mets le dossier en ligne sur un hébergeur statique gratuit
+(GitHub Pages, Netlify, Cloudflare Pages ou équivalent), à la racine d'un site ou dans un sous-dossier.
+Puis ouvre l'adresse dans Chrome sur Android : le bouton « Installer l'appli » apparaît sur l'écran d'accueil
+de l'appli, ou via le menu de Chrome > « Installer l'application ».
+
+FONCTIONNEMENT
+  - Les événements sont enregistrés dans le téléphone. Aucun serveur, aucun compte.
+  - L'organisateur crée l'événement et envoie le lien d'invitation.
+  - Chaque ami coche ses dispos et renvoie un message contenant un code.
+  - L'organisateur colle les messages dans l'onglet Organisateur, puis envoie le lien des résultats.
+
+APRÈS UNE MODIFICATION
+Change le numéro de version en haut de sw.js (VERSION), sinon les téléphones gardent l'ancienne copie en cache.
